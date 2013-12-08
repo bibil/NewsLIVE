@@ -1,28 +1,24 @@
 
 /* navigation */
-ul li {
-    display:inline;
-    border-left-style:solid;
-    border-right-style:solid;
-    border-left-color:white;
-    border-right-color:white;
-}
+
 
 header ul li {
     float: left;
     padding: 2px;
     width: 150px;
     font-size:24px;
-    margin-left: auto ;
-    margin-right: auto ;
+ 
 }
-header ul{
+header{
     height:30px;
     list-style-type: none; /*to remove bullets*/
     text-align: center;
     margin: 0 auto;
     display:table;
     overflow: hidden;
+    margin-left: auto ;
+    margin-right: auto ;
+    font-family:navFont;
 }
 
 .navLink { 
@@ -35,13 +31,8 @@ header ul{
     color:white;
 
 }
-header {
-    background-color:white;
-    font-family:navFont;
 
-}
-
-body{
+body {
     background:#f2f2f2; 
 }
 
@@ -49,10 +40,6 @@ body{
     text-align:center;
     font-size:50px
 }
-
-
-
-
 .newspaper
 {
     -moz-column-count:3; /* Firefox */
