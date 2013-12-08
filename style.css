@@ -1,3 +1,4 @@
+
 /* navigation */
 ul li {
     display:inline;
@@ -6,10 +7,28 @@ ul li {
     border-left-color:white;
     border-right-color:white;
 }
+
+header ul li {
+    float: left;
+    padding: 2px;
+    width: 150px;
+    font-size:24px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+header ul{
+    height:30px;
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    margin: 0 auto;
+    display:table;
+    overflow: hidden;
+}
+
 .navLink { 
     text-decoration : none; 
-    color : #000;
     font-size:15px;
+    color:black;
     
 }
 .navLink:hover {
@@ -22,7 +41,18 @@ header {
 
 }
 
-/* navigation end */
+body{
+    background:#f2f2f2; 
+}
+
+.main_heading{
+    text-align:center;
+    font-size:50px
+}
+
+
+
+
 .newspaper
 {
     -moz-column-count:3; /* Firefox */
@@ -42,4 +72,7 @@ header {
     font-family:newsPaperFont;
     src: url('fonts/SpecialElite.ttf');
 }
+
+
+
 
