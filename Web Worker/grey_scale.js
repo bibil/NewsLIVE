@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function(){
     var v = document.getElementById('v');
     var canvas = document.getElementById('c');
     var context = canvas.getContext('2d');
-    var back = document.createElement('canvas');
+    
+    var back = document.getElementById('original');
     var backcontext = back.getContext('2d');
     var cw,ch;
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
 },false);
 
 function draw(v,c,bc,w,h) {
+
     if(v.paused || v.ended) return false;
     // First, draw it into the backing canvas
     bc.drawImage(v,0,0,w,h);
