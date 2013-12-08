@@ -1,20 +1,21 @@
 <html>
 <head>
 	<title>Video GrayScaling</title>
-	<script src="local.js"></script>
+	<!-- // <script src="local.js"></script> -->
+	
 </head>
 <body>
-	<head>Welcome to video</head>
-	
-    <h3 id="title">Canvas Video Greyscale Filter</h3>
-	<video class="filterSVG" width="320" id="videosample" controls >
+	<h1>Welcome to video</h1>
+	    <h3>Canvas Video Greyscale Filter</h3>
+		<video class="filterSVG" width="320" id="v" controls >
+			  <source src="./video1.mp4" type="video/mp4" />
+			  Your browser does not support the video tag.
+		</video>
+	<canvas id="c"></canvas>
+	<!-- <video class="filterSVG" width="320" id="videogrey" controls >
 		  <source src="./video1.mp4" type="video/mp4" />
 		  Your browser does not support the video tag.
-	</video>
-	<video class="filterSVG" width="320" id="videogrey" controls >
-		  <source src="./video1.mp4" type="video/mp4" />
-		  Your browser does not support the video tag.
-	</video>
+	</video> -->
 </body>
 </html>
 <!-- <svg xmlns="http://www.w3.org/2000/svg" id="image" version="1.1">
@@ -28,4 +29,4 @@
         </filter>
     </defs>
  </svg> -->
-<script src="local.js"></script>
+<script src="grey_scale.js"></script>
