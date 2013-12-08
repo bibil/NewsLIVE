@@ -54,7 +54,8 @@ header{margin-bottom:20px;}
 
 .main_heading{
     text-align:center;
-    font-size:50px
+    font-size:50px;
+    
 }
 
 .main_img{
@@ -98,4 +99,8 @@ body {
     src: url('fonts/SpecialElite.ttf');
 }
 
-h2 , h1{font-family:navFont;}
+h2 , h1{
+    font-family:navFont;
+}
+
+
