@@ -13,8 +13,15 @@ header ul li {
     font-size:24px;
  
 }
-header ul{
+
+header ul li:hover{
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
+
 header{
     height:30px;
     list-style-type: none; /*to remove bullets*/
