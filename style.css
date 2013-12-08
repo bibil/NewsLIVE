@@ -3,9 +3,8 @@ body{
     background:#f2f2f2; 
 }
 
-.main_heading{
-    text-align:center;
-    font-size:50px
+.content{
+    margin-left:2%;
 }
 header ul{
     height:30px;
@@ -26,19 +25,52 @@ header ul li {
     margin-right: auto ;
 }
 
+header{margin-bottom:20px;}
+
 a{text-decoration:none}
 a:link {color:#ffffff;}      /* unvisited link */
 a:hover {color:#828282;}  /* mouse over link */
 
-.newspaper
-{
-    -moz-column-count:3; /* Firefox */
-    -webkit-column-count:3; /* Safari and Chrome */
-    column-count:2;
-    margin-top:10px;
+.story{
+    padding-bottom:2%;
+    border-bottom:2px dashed rgb(216, 216, 216);
 }
 
 .first_column{
     float:left;
     width:50%;
+    border: 2px solid rgb(206, 206, 206);
+    padding:10px;
+}
+
+.second_column{
+    float:left;
+    width:10%;
+    border: 2px solid rgb(206, 206, 206);
+    padding:10px;
+}
+.third_column{
+    float:left;
+    width:30%;
+    border: 2px solid rgb(206, 206, 206);
+    padding:10px;
+}
+
+.main_heading{
+    text-align:center;
+    font-size:50px
+}
+
+.main_img{
+    float:right;
+    position: relative;
+    width: 50%;
+    margin-left:2%;;
+}
+
+.main_p
+{
+    display:inline;
+    -moz-column-count:2; /* Firefox */
+    -webkit-column-count:2; /* Safari and Chrome */
 }
