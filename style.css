@@ -1,11 +1,24 @@
-
-nav ul li {
+ul li {
     display:inline;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-left-color:white;
+    border-right-color:white;
 }
-
+.navLink { 
+    text-decoration : none; 
+    color : #000; 
+}
+.navLink:hover {
+    color:white;
+}
+header {
+background-color:white;    
+}
 .newspaper
 {
 -moz-column-count:3; /* Firefox */
 -webkit-column-count:3; /* Safari and Chrome */
 column-count:3;
+margin-top:10px;
 }
