@@ -1,3 +1,4 @@
+/* navigation */
 ul li {
     display:inline;
     border-left-style:solid;
@@ -7,18 +8,38 @@ ul li {
 }
 .navLink { 
     text-decoration : none; 
-    color : #000; 
+    color : #000;
+    font-size:15px;
+    
 }
 .navLink:hover {
     color:white;
+
 }
 header {
-background-color:white;    
+    background-color:white;
+    font-family:navFont;
+
 }
+
+/* navigation end */
 .newspaper
 {
--moz-column-count:3; /* Firefox */
--webkit-column-count:3; /* Safari and Chrome */
-column-count:3;
-margin-top:10px;
+    -moz-column-count:3; /* Firefox */
+    -webkit-column-count:3; /* Safari and Chrome */
+    column-count:3;
+    margin-top:10px;
+    font-family:newsPaperFont;
 }
+
+/* font faces */
+@font-face {
+    font-family:navFont;
+    src: url('fonts/CherrySwash-Regular.otf');
+}
+
+@font-face {
+    font-family:newsPaperFont;
+    src: url('fonts/SpecialElite.ttf');
+}
+
