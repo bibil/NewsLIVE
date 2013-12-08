@@ -1,19 +1,8 @@
 
-body{
-    background:#f2f2f2; 
-}
+/* navigation */
 
 .content{
     margin-left:2%;
-}
-header ul{
-    height:30px;
-    list-style-type: none; /*to remove bullets*/
-    text-align: center;
-    margin: 0 auto;
-    display:table;
-    overflow: hidden;
-    background-color:#323232;
 }
 
 header ul li {
@@ -21,8 +10,19 @@ header ul li {
     padding: 2px;
     width: 150px;
     font-size:24px;
+ 
+}
+
+header{
+    height:30px;
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    margin: 0 auto;
+    display:table;
+    overflow: hidden;
     margin-left: auto ;
     margin-right: auto ;
+    font-family:navFont;
 }
 
 header{margin-bottom:20px;}
@@ -74,3 +74,32 @@ a:hover {color:#828282;}  /* mouse over link */
     -moz-column-count:2; /* Firefox */
     -webkit-column-count:2; /* Safari and Chrome */
 }
+.navLink { 
+    text-decoration : none; 
+    font-size:15px;
+    color:black;
+    
+}
+.navLink:hover {
+    color:white;
+
+}
+
+body {
+    background:#f2f2f2; 
+    font-family:newsPaperFont;
+}
+
+
+/* font faces */
+@font-face {
+    font-family:navFont;
+    src: url('fonts/CherrySwash-Regular.otf');
+}
+
+@font-face {
+    font-family:newsPaperFont;
+    src: url('fonts/SpecialElite.ttf');
+}
+
+h2 , h1{font-family:navFont;}
