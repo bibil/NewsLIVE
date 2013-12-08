@@ -1,0 +1,115 @@
+
+/* navigation */
+
+.content{
+    margin-left:2%;
+    word-break:break-all;
+}   
+
+header ul li {
+    float: left;
+    padding: 2px;
+    width: 150px;
+    font-size:24px;
+ 
+}
+
+header ul li:hover{
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+header{
+    height:30px;
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    margin: 0 auto;
+    display:table;
+    overflow:auto;
+    margin-left: auto ;
+    margin-right: auto ;
+    font-family:navFont;
+    margin-bottom:20px;
+}
+
+
+.story{
+    padding-bottom:2%;
+    border-bottom:2px dashed rgb(216, 216, 216);
+}
+
+.first_column{
+    float:left;
+    width:50%;
+    border: 2px solid rgb(206, 206, 206);
+    padding:10px;
+}
+
+.second_column{
+    float:left;
+    width:10%;
+    border: 2px solid rgb(206, 206, 206);
+    padding:10px;
+}
+.third_column{
+    float:left;
+    width:30%;
+    border: 2px solid rgb(206, 206, 206);
+    padding:10px;
+}
+
+.main_heading{
+    text-align:center;
+    font-size:50px;
+    
+}
+
+.main_img{
+    float:right;
+    position: relative;
+    width: 50%;
+    margin-left:2%;;
+}
+
+.main_p
+{
+    display:inline;
+    -moz-column-count:2; /* Firefox */
+    -webkit-column-count:2; /* Safari and Chrome */
+}
+.navLink { 
+    text-decoration : none; 
+    font-size:15px;
+    color:black;
+    
+}
+.navLink:hover {
+    color:white;
+
+}
+
+body {
+    background:#f2f2f2; 
+    font-family:newsPaperFont;
+}
+
+
+/* font faces */
+@font-face {
+    font-family:navFont;
+    src: url('fonts/CherrySwash-Regular.otf');
+}
+
+@font-face {
+    font-family:newsPaperFont;
+    src: url('fonts/SpecialElite.ttf');
+}
+
+h2 , h1{
+    font-family:navFont;
+}
+
+
