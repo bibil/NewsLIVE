@@ -86,7 +86,10 @@ header{
     float:right;
     position: relative;
     width: 50%;
-    margin-left:2%;;
+    margin-left:2%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .main_p
@@ -109,6 +112,7 @@ header{
 body {
     background:#f2f2f2; 
     font-family:newsPaperFont;
+    background-image:url('images/newspaper.jpg');
 }
 
 
