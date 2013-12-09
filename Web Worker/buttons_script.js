@@ -56,14 +56,6 @@ video.addEventListener("timeupdate", function() {
   // Update the slider value
   seekBar.value = value;
 });
-// seekBar.addEventListener("mousedown", function() {
-//   video.pause();
-// });
-
-// // Play the video when the slider handle is dropped
-// seekBar.addEventListener("mouseup", function() {
-//   video.play();
-// });
 volumeBar.addEventListener("change", function() {
   // Update the video volume
   video.volume = volumeBar.value;
