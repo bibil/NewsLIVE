@@ -1,6 +1,8 @@
 
-var array= []; var index = 0;
-var count = 0; var counter = 0;
+var array = []; 
+var index = 0;
+var count = 0;
+var counter = 0;
 function parseRSS(url, container) {
   $.ajax({
     url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
