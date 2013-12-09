@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var v = document.getElementById('v');
     var canvas = document.getElementById('c');
     var context = canvas.getContext('2d');
-    
-    var back = document.getElementById('original');
+    var back = document.createElement('canvas');
     var backcontext = back.getContext('2d');
     var cw,ch;
 
