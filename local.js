@@ -1,4 +1,5 @@
-var worker = new Worker('update.js');
+
+var worker = new Worker('work.js');
 var current = "";
 worker.postMessage(current);
 worker.addEventListener('message', function(event){

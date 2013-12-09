@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function(){
     var cw,ch;
 
     v.addEventListener('play', function(){
-        cw = v.clientWidth;
-        ch = v.clientHeight;
+        cw = canvas.width;
+        ch = canvas.height;
         canvas.width = cw;
         canvas.height = ch;
         back.width = cw;
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
 },false);
 
 function draw(v,c,bc,w,h) {
+
     if(v.paused || v.ended) return false;
     // First, draw it into the backing canvas
     bc.drawImage(v,0,0,w,h);
