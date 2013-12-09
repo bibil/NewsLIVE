@@ -115,7 +115,11 @@ header{
 body {
     background:#f2f2f2; 
     font-family:newsPaperFont;
-    background-image:url('images/brickwall.png');
+    background-image:url('images/newspaper.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
