@@ -5,11 +5,6 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="anim.css" rel="stylesheet" type="text/css" />
         <script src="jquery-1.10.2.min.js"></script>
-        <style type="text/css">
-            .filterSVG{
-                -webkit-filter : url(#blackandwhite);
-        }
-        </style>
     </head>
     <body>
         <header>
@@ -37,10 +32,19 @@
                 </div>
                 <div class="story">
                     <h2> latest videos</h2>
-                    <video class="filterSVG" width="520" id="v" controls >
+                    <video class="filterSVG" width="500" height="350" id="v" controls hidden>
                         <source src="./Web Worker/video1.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
+                    <canvas id="c" width="500" height="350"></canvas>
+
+                    <div id="video-controls">
+                        <button type="button" id="play-pause">Play</button>
+                        <input type="range" id="seek-bar" value="0">
+                        <button type="button" id="mute">Mute</button>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                        <button type="button" id="full-screen">Full-Screen</button>
+                    </div>
                 </div>
             </div>
             <div class="second_column">
@@ -57,17 +61,7 @@
             </div>
         </div>
         <script src="local.js"></script>
+        <script src="Web Worker/grey_scale.js"></script>
+        <script src="Web Worker/buttons_script.js"></script>
     </body>
-    <svg xmlns="http://www.w3.org/2000/svg" id="image" version="1.1">
-        <defs>
-            <filter id="blackandwhite">
-                <feColorMatrix values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
-            </filter>
-
-            <filter id="grayscale">
-                <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
-            </filter>       
-        </defs>
-    </svg>
-
 </html>
