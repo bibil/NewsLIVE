@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function(){
     var cw,ch;
 
     v.addEventListener('play', function(){
-        cw = v.clientWidth;
-        ch = v.clientHeight;
+        cw = canvas.width;
+        ch = canvas.height;
         canvas.width = cw;
         canvas.height = ch;
         back.width = cw;
