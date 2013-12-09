@@ -4,7 +4,7 @@
         <title> NEWS LIVE!</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="anim.css" rel="stylesheet" type="text/css" />
-        <script src="jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
@@ -16,7 +16,7 @@
            </ul>
         </header>
             <ul>
-                <span id="news"> news</span>
+                <span id="news">LIVE NEWS</span>
            </ul>
         <div class="content">
             <div class="first_column">
@@ -48,5 +48,9 @@
             </div>
         </div>
         <script src="local.js"></script>
+        <script src="parser.js"></script>
+        <script type="application/javascript">
+            parseRSS('http://rss.nytimes.com/services/xml/rss/nyt/MiddleEast.xml',document.getElementById('news'))
+        </script>
     </body>
 </html>
